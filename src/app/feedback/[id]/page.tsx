@@ -15,7 +15,7 @@ export default async function FeedbackPage({ params }: Props) {
   return (
     <Suspense
       fallback={
-        <div className="text-sm text-zinc-600">Loading feedback form…</div>
+        <div className="text-sm text-foreground-muted">Loading feedback form…</div>
       }
     >
       <FeedbackClient mentor={mentor} />

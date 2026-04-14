@@ -31,9 +31,9 @@ export default async function ForumThreadPage({ params }: Props) {
         ← Forum
       </Link>
 
-      <article className="rounded-2xl border border-border bg-white p-6 shadow-sm sm:p-8">
+      <article className="rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-8">
         <div className="flex flex-wrap items-start justify-between gap-3">
-          <h1 className="text-balance text-2xl font-semibold tracking-tight text-zinc-900">
+          <h1 className="text-balance text-2xl font-semibold tracking-tight text-foreground">
             {thread.title}
           </h1>
           {genre ? (
@@ -45,33 +45,33 @@ export default async function ForumThreadPage({ params }: Props) {
             </Link>
           ) : null}
         </div>
-        <p className="mt-3 text-sm leading-relaxed text-zinc-600">
+        <p className="mt-3 text-sm leading-relaxed text-foreground-muted">
           {thread.excerpt}
         </p>
-        <div className="mt-4 text-xs text-zinc-500">
+        <div className="mt-4 text-xs text-foreground-soft">
           {thread.replyCount} replies · Last activity {thread.lastActivity}
         </div>
       </article>
 
       <section className="space-y-3">
-        <h2 className="text-sm font-semibold text-zinc-900">Replies (sample)</h2>
+        <h2 className="text-sm font-semibold text-foreground">Replies (sample)</h2>
         <div className="space-y-3">
           {SAMPLE_REPLIES.map((r) => (
             <div
               key={r.name}
-              className="rounded-2xl border border-border bg-white p-5 shadow-sm"
+              className="rounded-2xl border border-border bg-card p-5 shadow-sm"
             >
               <div className="flex flex-wrap items-center justify-between gap-2">
-                <div className="text-sm font-semibold text-zinc-900">{r.name}</div>
+                <div className="text-sm font-semibold text-foreground">{r.name}</div>
                 <div className="text-xs font-semibold text-primary">{r.author}</div>
               </div>
-              <p className="mt-2 text-sm leading-relaxed text-zinc-700">{r.body}</p>
+              <p className="mt-2 text-sm leading-relaxed text-foreground-muted">{r.body}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <div className="rounded-xl border border-dashed border-primary/40 bg-primary/5 p-4 text-sm text-zinc-700">
+      <div className="rounded-xl border border-dashed border-primary/40 bg-primary/5 p-4 text-sm text-foreground-muted">
         Prototype: replies are static. In a pilot, seed questions and attach
         mentors to high-signal threads.
       </div>

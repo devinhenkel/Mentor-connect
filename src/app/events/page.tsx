@@ -5,10 +5,10 @@ export default function EventsPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-3xl font-semibold tracking-tight text-zinc-900">
+        <h1 className="text-3xl font-semibold tracking-tight text-foreground">
           Events
         </h1>
-        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-zinc-600">
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-foreground-muted">
           AMAs and small group sessions—listed here to test whether events belong
           beside themes, mentors, or both.
         </p>
@@ -20,14 +20,14 @@ export default function EventsPage() {
           return (
             <div
               key={e.id}
-              className="rounded-2xl border border-border bg-white p-6 shadow-sm"
+              className="rounded-2xl border border-border bg-card p-6 shadow-sm"
             >
-              <div className="text-base font-semibold text-zinc-900">{e.title}</div>
-              <div className="mt-1 text-xs text-zinc-500">{e.startsAt}</div>
-              <p className="mt-3 text-sm leading-relaxed text-zinc-600">
+              <div className="text-base font-semibold text-foreground">{e.title}</div>
+              <div className="mt-1 text-xs text-foreground-soft">{e.startsAt}</div>
+              <p className="mt-3 text-sm leading-relaxed text-foreground-muted">
                 {e.description}
               </p>
-              <div className="mt-4 text-xs font-medium text-zinc-500">
+              <div className="mt-4 text-xs font-medium text-foreground-soft">
                 Host: {e.host}
               </div>
               {genre ? (

@@ -31,19 +31,19 @@ export default async function BookConfirmedPage({ params, searchParams }: Props)
         ← Change time
       </Link>
 
-      <div className="rounded-2xl border border-border bg-white p-6 shadow-sm">
+      <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
         <p className="text-sm font-semibold text-primary">You’re checked out</p>
-        <h1 className="mt-2 text-2xl font-semibold tracking-tight text-zinc-900">
+        <h1 className="mt-2 text-2xl font-semibold tracking-tight text-foreground">
           {mentor.name} · {slotLabel}
         </h1>
-        <p className="mt-3 text-sm leading-relaxed text-zinc-600">
+        <p className="mt-3 text-sm leading-relaxed text-foreground-muted">
           In a full build, you’d receive a calendar hold and a Teams link. For
           now, treat this as alignment on tone: playful library metaphor,
           serious outcomes.
         </p>
 
-        <div className="mt-6 rounded-xl border border-dashed border-border bg-surface-muted/60 p-4 text-sm text-zinc-700">
-          <div className="font-semibold text-zinc-900">Suggested next steps</div>
+        <div className="mt-6 rounded-xl border border-dashed border-border bg-surface-muted/60 p-4 text-sm text-foreground-muted">
+          <div className="font-semibold text-foreground">Suggested next steps</div>
           <ul className="mt-2 list-disc space-y-1 pl-5">
             <li>Optional pre-session note to set context</li>
             <li>Join Teams at start time</li>
