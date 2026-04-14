@@ -1,10 +1,11 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import type { Mentor } from "@/lib/types";
 import { Button } from "@/components/Button";
+import { MentorAvatar } from "@/components/MentorAvatar";
 
 type Props = {
   mentor: Mentor;
@@ -22,14 +23,6 @@ export function BookClient({ mentor }: Props) {
   const router = useRouter();
   const [slot, setSlot] = useState<string>(SLOTS[0] ?? "");
   const [pending, setPending] = useState(false);
-
-  const mentorInitials = useMemo(() => {
-    return mentor.name
-      .split(" ")
-      .map((p) => p[0])
-      .join("")
-      .slice(0, 2);
-  }, [mentor.name]);
 
   return (
     <div className="mx-auto max-w-xl space-y-8">
@@ -51,12 +44,11 @@ export function BookClient({ mentor }: Props) {
         </p>
 
         <div className="mt-6 flex items-start gap-4">
-          <div
-            className="flex h-12 w-12 items-center justify-center rounded-full bg-surface-muted text-sm font-semibold text-foreground-muted"
-            aria-hidden
-          >
-            {mentorInitials}
-          </div>
+          <MentorAvatar
+            mentorId={mentor.id}
+            size="sm"
+            title={`Illustrated avatar for ${mentor.name}`}
+          />
           <div>
             <div className="text-sm font-semibold text-foreground">
               {mentor.name}

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/Button";
+import { MentorAvatar } from "@/components/MentorAvatar";
 import { genres, getMentorById } from "@/lib/data";
 
 type Props = {
@@ -26,22 +27,23 @@ export default async function MentorPage({ params }: Props) {
       <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
         <div className="space-y-6">
           <div className="rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-8">
-            <div className="flex flex-wrap items-start justify-between gap-4">
-              <div>
+            <div className="flex flex-col gap-6 sm:flex-row sm:items-start">
+              <MentorAvatar
+                mentorId={mentor.id}
+                size="lg"
+                className="sm:mt-1"
+                title={`Illustrated avatar for ${mentor.name}`}
+              />
+              <div className="min-w-0 flex-1">
                 <h1 className="text-3xl font-semibold tracking-tight text-foreground">
                   {mentor.name}
                 </h1>
                 <p className="mt-2 text-sm text-foreground-muted">{mentor.title}</p>
-              </div>
-              <div
-                className="flex h-14 w-14 items-center justify-center rounded-full bg-surface-muted text-base font-semibold text-foreground-muted"
-                aria-hidden
-              >
-                {mentor.name
-                  .split(" ")
-                  .map((p) => p[0])
-                  .join("")
-                  .slice(0, 2)}
+                <p className="mt-3 text-xs leading-relaxed text-foreground-soft">
+                  Illustrated placeholder — in production this would be the
+                  mentor&apos;s photo or chosen portrait, paired with their story
+                  below so the human side comes through first.
+                </p>
               </div>
             </div>
 
