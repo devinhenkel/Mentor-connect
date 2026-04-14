@@ -1,0 +1,18 @@
+[
+  {
+    "id": "e-1",
+    "title": "AMA: Client relationship building under pressure",
+    "host": "Ada Okonkwo",
+    "startsAt": "Fri, May 16 · 1:00 PM ET",
+    "genreId": "g-client",
+    "description": "Live Q&A on renewals, exec alignment, and protecting the team when timelines slip."
+  },
+  {
+    "id": "e-2",
+    "title": "Group roundtable: High-performing teams in hybrid",
+    "host": "Jon Whitaker + Carmen Duarte",
+    "startsAt": "Thu, May 22 · 12:00 PM PT",
+    "genreId": "g-teams",
+    "description": "Small-group discussion (5 seats) on rituals, boundaries, and psychological safety."
+  }
+]

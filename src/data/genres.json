@@ -1,0 +1,74 @@
+[
+  {
+    "id": "g-client",
+    "slug": "stronger-client-relationships",
+    "title": "Stronger Client Relationships",
+    "description": "Navigate tough conversations, expand trusted advisor status, and protect accounts through change.",
+    "highlightTags": [
+      "Trusted advisor",
+      "Executive presence",
+      "Account expansion",
+      "Difficult conversations"
+    ]
+  },
+  {
+    "id": "g-leadership",
+    "slug": "leadership-excellence",
+    "title": "Leadership Excellence",
+    "description": "Grow as a partner-leader: teams, stakeholders, and your own leadership operating system.",
+    "highlightTags": [
+      "Leading leaders",
+      "Stakeholder alignment",
+      "Coaching",
+      "Decision velocity"
+    ]
+  },
+  {
+    "id": "g-teams",
+    "slug": "high-performing-teams",
+    "title": "High-performing Teams",
+    "description": "Shape teaming models, psychological safety, and delivery rhythm without burning people out.",
+    "highlightTags": [
+      "Team charters",
+      "Psychological safety",
+      "Capacity planning",
+      "Hybrid teaming"
+    ]
+  },
+  {
+    "id": "g-practice",
+    "slug": "practice-building",
+    "title": "Practice & Practice Building",
+    "description": "Go-to-market, offerings, pricing conversations, and building a durable book of business.",
+    "highlightTags": [
+      "Pricing strategy",
+      "Offerings",
+      "Pipeline",
+      "Industry plays"
+    ]
+  },
+  {
+    "id": "g-delivery",
+    "slug": "delivery-excellence",
+    "title": "Delivery Excellence",
+    "description": "Complex programs, quality at pace, and recovering engagements that are off track.",
+    "highlightTags": [
+      "Program recovery",
+      "Risk management",
+      "Quality",
+      "Operating rhythm"
+    ]
+  },
+  {
+    "id": "g-firm",
+    "slug": "firm-navigation",
+    "title": "Firm Navigation",
+    "description": "Processes, networks, and political savvy to get things done inside a large partnership.",
+    "highlightTags": [
+      "Internal networks",
+      "Resourcing",
+      "Risk & independence",
+      "Career sponsorship"
+    ]
+  }
+]
