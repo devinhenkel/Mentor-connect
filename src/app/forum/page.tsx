@@ -5,16 +5,16 @@ export default function ForumPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-3xl font-semibold tracking-tight text-zinc-900">
+        <h1 className="text-3xl font-semibold tracking-tight text-foreground">
           LCP Community Forum
         </h1>
-        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-zinc-600">
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-foreground-muted">
           Threads are tagged to themes so browsing stays consistent with mentor
           discovery.
         </p>
       </div>
 
-      <div className="divide-y divide-border rounded-2xl border border-border bg-white shadow-sm">
+      <div className="divide-y divide-border rounded-2xl border border-border bg-card shadow-sm">
         {forumThreads.map((t) => {
           const genre = genres.find((g) => g.id === t.genreId);
           return (
@@ -24,7 +24,7 @@ export default function ForumPage() {
               className="block px-5 py-4 transition hover:bg-surface-muted"
             >
               <div className="flex flex-wrap items-center justify-between gap-2">
-                <div className="text-sm font-semibold text-zinc-900">
+                <div className="text-sm font-semibold text-foreground">
                   {t.title}
                 </div>
                 {genre ? (
@@ -33,8 +33,8 @@ export default function ForumPage() {
                   </span>
                 ) : null}
               </div>
-              <div className="mt-1 text-sm text-zinc-600">{t.excerpt}</div>
-              <div className="mt-2 text-xs text-zinc-500">
+              <div className="mt-1 text-sm text-foreground-muted">{t.excerpt}</div>
+              <div className="mt-2 text-xs text-foreground-soft">
                 {t.replyCount} replies · {t.lastActivity}
               </div>
             </Link>

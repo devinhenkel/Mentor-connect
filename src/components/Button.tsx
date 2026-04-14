@@ -16,8 +16,8 @@ export function Button({
     variant === "primary"
       ? "bg-primary text-primary-foreground hover:brightness-95 focus-visible:outline-primary"
       : variant === "secondary"
-        ? "border border-border bg-white text-zinc-900 hover:bg-surface-muted focus-visible:outline-zinc-400"
-        : "text-zinc-800 hover:bg-surface-muted focus-visible:outline-zinc-400";
+        ? "border border-border bg-card text-foreground hover:bg-surface-muted focus-visible:outline-border"
+        : "text-foreground hover:bg-surface-muted focus-visible:outline-border";
 
   return <button className={`${base} ${styles} ${className}`} {...props} />;
 }
@@ -37,8 +37,8 @@ export function ButtonLink({
     variant === "primary"
       ? "bg-primary text-primary-foreground hover:brightness-95 focus-visible:outline-primary"
       : variant === "secondary"
-        ? "border border-border bg-white text-zinc-900 hover:bg-surface-muted focus-visible:outline-zinc-400"
-        : "text-zinc-800 hover:bg-surface-muted focus-visible:outline-zinc-400";
+        ? "border border-border bg-card text-foreground hover:bg-surface-muted focus-visible:outline-border"
+        : "text-foreground hover:bg-surface-muted focus-visible:outline-border";
 
   return <Link className={`${base} ${styles} ${className}`} {...props} />;
 }

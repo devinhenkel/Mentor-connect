@@ -20,12 +20,12 @@ export function HomeClient({ genres, allMentors }: Props) {
 
   return (
     <div className="space-y-10">
-      <section className="rounded-2xl border border-border bg-white p-6 shadow-sm sm:p-8">
+      <section className="rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-8">
         <p className="text-sm font-semibold text-primary">LCP Mentor Connector</p>
-        <h1 className="mt-2 text-balance text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
+        <h1 className="mt-2 text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
           Find a mentor by theme—or search the marketplace.
         </h1>
-        <p className="mt-3 max-w-2xl text-pretty text-base leading-relaxed text-zinc-600">
+        <p className="mt-3 max-w-2xl text-pretty text-base leading-relaxed text-foreground-muted">
           This prototype simulates discovery, profiles, and a playful
           &ldquo;check-out&rdquo; flow. Use it to align on language, navigation,
           and what belongs in v1.
@@ -37,7 +37,7 @@ export function HomeClient({ genres, allMentors }: Props) {
             className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
               mode === "themes"
                 ? "bg-primary text-primary-foreground"
-                : "bg-surface-muted text-zinc-800 hover:bg-zinc-200"
+                : "bg-surface-muted text-foreground hover:bg-muted"
             }`}
           >
             Browse by theme
@@ -48,7 +48,7 @@ export function HomeClient({ genres, allMentors }: Props) {
             className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
               mode === "search"
                 ? "bg-primary text-primary-foreground"
-                : "bg-surface-muted text-zinc-800 hover:bg-zinc-200"
+                : "bg-surface-muted text-foreground hover:bg-muted"
             }`}
           >
             Search first
@@ -59,14 +59,14 @@ export function HomeClient({ genres, allMentors }: Props) {
       {mode === "search" ? (
         <section className="space-y-4">
           <label className="block">
-            <span className="text-sm font-medium text-zinc-800">
+            <span className="text-sm font-medium text-foreground">
               What do you want to get better at?
             </span>
             <input
               value={q}
               onChange={(e) => setQ(e.target.value)}
               placeholder='Try "pricing", "renewal", "psychological safety"...'
-              className="mt-2 w-full rounded-xl border border-border bg-white px-4 py-3 text-sm text-zinc-900 shadow-sm outline-none ring-primary/30 placeholder:text-zinc-400 focus:ring-4"
+              className="mt-2 w-full rounded-xl border border-border bg-card px-4 py-3 text-sm text-foreground shadow-sm outline-none ring-primary/30 placeholder:text-foreground-soft focus:ring-4"
             />
           </label>
           <div className="grid gap-4 md:grid-cols-2">
@@ -75,7 +75,7 @@ export function HomeClient({ genres, allMentors }: Props) {
                 <MentorCard key={m.id} mentor={m} genres={genres} />
               ))
             ) : (
-              <p className="text-sm text-zinc-600">
+              <p className="text-sm text-foreground-muted">
                 No mentors match that query in the prototype dataset.
               </p>
             )}
@@ -85,10 +85,10 @@ export function HomeClient({ genres, allMentors }: Props) {
         <section className="space-y-4">
           <div className="flex flex-wrap items-end justify-between gap-3">
             <div>
-              <h2 className="text-lg font-semibold text-zinc-900">
+              <h2 className="text-lg font-semibold text-foreground">
                 Themes (genres)
               </h2>
-              <p className="mt-1 text-sm text-zinc-600">
+              <p className="mt-1 text-sm text-foreground-muted">
                 Pick a growth area—mentors are curated into each theme.
               </p>
             </div>
@@ -105,15 +105,15 @@ export function HomeClient({ genres, allMentors }: Props) {
                 <Link
                   key={g.id}
                   href={`/genres/${g.slug}`}
-                  className="group rounded-2xl border border-border bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md"
+                  className="group rounded-2xl border border-border bg-card p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md"
                 >
-                  <h3 className="text-base font-semibold text-zinc-900 group-hover:text-primary">
+                  <h3 className="text-base font-semibold text-foreground group-hover:text-primary">
                     {g.title}
                   </h3>
-                  <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-zinc-600">
+                  <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-foreground-muted">
                     {g.description}
                   </p>
-                  <p className="mt-4 text-xs font-medium text-zinc-500">
+                  <p className="mt-4 text-xs font-medium text-foreground-soft">
                     {count} mentor{count === 1 ? "" : "s"} in prototype
                   </p>
                 </Link>
@@ -124,10 +124,10 @@ export function HomeClient({ genres, allMentors }: Props) {
       )}
 
       <section className="rounded-2xl border border-dashed border-primary/40 bg-primary/5 p-6">
-        <h2 className="text-base font-semibold text-zinc-900">
+        <h2 className="text-base font-semibold text-foreground">
           Facilitator note
         </h2>
-        <p className="mt-2 text-sm leading-relaxed text-zinc-700">
+        <p className="mt-2 text-sm leading-relaxed text-foreground-muted">
           Toggle &ldquo;Browse by theme&rdquo; vs &ldquo;Search first&rdquo; in
           usability sessions. Both map to the same underlying mentor dataset.
         </p>

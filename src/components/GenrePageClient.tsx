@@ -45,16 +45,16 @@ export function GenrePageClient({
         >
           ← All themes
         </Link>
-        <h1 className="text-balance text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
+        <h1 className="text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
           {genre.title}
         </h1>
-        <p className="max-w-3xl text-pretty text-base leading-relaxed text-zinc-600">
+        <p className="max-w-3xl text-pretty text-base leading-relaxed text-foreground-muted">
           {genre.description}
         </p>
       </div>
 
-      <section className="rounded-2xl border border-border bg-white p-5 shadow-sm sm:p-6">
-        <h2 className="text-sm font-semibold text-zinc-900">Spotlight tags</h2>
+      <section className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
+        <h2 className="text-sm font-semibold text-foreground">Spotlight tags</h2>
         <div className="mt-3 flex flex-wrap gap-2">
           {genre.highlightTags.map((t) => (
             <span
@@ -70,8 +70,8 @@ export function GenrePageClient({
       <section className="space-y-4">
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div>
-            <h2 className="text-lg font-semibold text-zinc-900">Mentors</h2>
-            <p className="mt-1 text-sm text-zinc-600">
+            <h2 className="text-lg font-semibold text-foreground">Mentors</h2>
+            <p className="mt-1 text-sm text-foreground-muted">
               Filter by tags that appear in this theme.
             </p>
           </div>
@@ -92,7 +92,7 @@ export function GenrePageClient({
                   className={`rounded-full px-3 py-1.5 text-xs font-semibold transition ${
                     active
                       ? "bg-primary text-primary-foreground"
-                      : "bg-surface-muted text-zinc-800 hover:bg-zinc-200"
+                      : "bg-surface-muted text-foreground hover:bg-muted"
                   }`}
                 >
                   {tag}
@@ -103,7 +103,7 @@ export function GenrePageClient({
               <button
                 type="button"
                 onClick={() => setActiveTags([])}
-                className="rounded-full px-3 py-1.5 text-xs font-semibold text-zinc-700 underline-offset-4 hover:underline"
+                className="rounded-full px-3 py-1.5 text-xs font-semibold text-foreground-muted underline-offset-4 hover:underline"
               >
                 Clear filters
               </button>
@@ -122,7 +122,7 @@ export function GenrePageClient({
           ))}
         </div>
         {!filtered.length ? (
-          <p className="text-sm text-zinc-600">
+          <p className="text-sm text-foreground-muted">
             No mentors match those filters in this theme.
           </p>
         ) : null}
@@ -130,21 +130,21 @@ export function GenrePageClient({
 
       {threads.length ? (
         <section className="space-y-3">
-          <h2 className="text-lg font-semibold text-zinc-900">
+          <h2 className="text-lg font-semibold text-foreground">
             Related forum threads
           </h2>
-          <div className="divide-y divide-border rounded-2xl border border-border bg-white shadow-sm">
+          <div className="divide-y divide-border rounded-2xl border border-border bg-card shadow-sm">
             {threads.map((t) => (
               <Link
                 key={t.id}
                 href={`/forum/${t.id}`}
                 className="block px-5 py-4 transition hover:bg-surface-muted"
               >
-                <div className="text-sm font-semibold text-zinc-900">
+                <div className="text-sm font-semibold text-foreground">
                   {t.title}
                 </div>
-                <div className="mt-1 text-sm text-zinc-600">{t.excerpt}</div>
-                <div className="mt-2 text-xs text-zinc-500">
+                <div className="mt-1 text-sm text-foreground-muted">{t.excerpt}</div>
+                <div className="mt-2 text-xs text-foreground-soft">
                   {t.replyCount} replies · {t.lastActivity}
                 </div>
               </Link>
@@ -155,21 +155,21 @@ export function GenrePageClient({
 
       {upcoming.length ? (
         <section className="space-y-3">
-          <h2 className="text-lg font-semibold text-zinc-900">
+          <h2 className="text-lg font-semibold text-foreground">
             Upcoming in this theme
           </h2>
           <div className="grid gap-3 md:grid-cols-2">
             {upcoming.map((e) => (
               <div
                 key={e.id}
-                className="rounded-2xl border border-border bg-white p-5 shadow-sm"
+                className="rounded-2xl border border-border bg-card p-5 shadow-sm"
               >
-                <div className="text-sm font-semibold text-zinc-900">
+                <div className="text-sm font-semibold text-foreground">
                   {e.title}
                 </div>
-                <div className="mt-1 text-xs text-zinc-500">{e.startsAt}</div>
-                <div className="mt-2 text-sm text-zinc-600">{e.description}</div>
-                <div className="mt-3 text-xs font-medium text-zinc-500">
+                <div className="mt-1 text-xs text-foreground-soft">{e.startsAt}</div>
+                <div className="mt-2 text-sm text-foreground-muted">{e.description}</div>
+                <div className="mt-3 text-xs font-medium text-foreground-soft">
                   Host: {e.host}
                 </div>
               </div>

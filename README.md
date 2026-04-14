@@ -16,3 +16,4 @@ Open `http://localhost:3000`.
 - Next.js (App Router) + TypeScript
 - Tailwind CSS v4 (`src/app/globals.css` theme tokens)
 - Primary brand color: `#FF6720` (defined as `primary` in Tailwind theme)
+- Light/dark mode: header toggle; preference stored in `localStorage` as `mc_theme`

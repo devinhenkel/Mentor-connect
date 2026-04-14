@@ -40,40 +40,40 @@ export function BookClient({ mentor }: Props) {
         ← Back to profile
       </Link>
 
-      <div className="rounded-2xl border border-border bg-white p-6 shadow-sm">
+      <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
         <p className="text-sm font-semibold text-primary">Check out a mentor</p>
-        <h1 className="mt-2 text-2xl font-semibold tracking-tight text-zinc-900">
+        <h1 className="mt-2 text-2xl font-semibold tracking-tight text-foreground">
           Book time with {mentor.name}
         </h1>
-        <p className="mt-2 text-sm leading-relaxed text-zinc-600">
+        <p className="mt-2 text-sm leading-relaxed text-foreground-muted">
           Prototype only: this won’t send calendar invites. The goal is to
           validate copy, steps, and expectations.
         </p>
 
         <div className="mt-6 flex items-start gap-4">
           <div
-            className="flex h-12 w-12 items-center justify-center rounded-full bg-surface-muted text-sm font-semibold text-zinc-700"
+            className="flex h-12 w-12 items-center justify-center rounded-full bg-surface-muted text-sm font-semibold text-foreground-muted"
             aria-hidden
           >
             {mentorInitials}
           </div>
           <div>
-            <div className="text-sm font-semibold text-zinc-900">
+            <div className="text-sm font-semibold text-foreground">
               {mentor.name}
             </div>
-            <div className="text-sm text-zinc-600">{mentor.title}</div>
-            <div className="mt-2 text-xs text-zinc-500">
+            <div className="text-sm text-foreground-muted">{mentor.title}</div>
+            <div className="mt-2 text-xs text-foreground-soft">
               {mentor.availabilitySummary}
             </div>
           </div>
         </div>
 
         <div className="mt-6">
-          <label className="text-sm font-medium text-zinc-800">
+          <label className="text-sm font-medium text-foreground">
             Choose a time
           </label>
           <select
-            className="mt-2 w-full rounded-xl border border-border bg-white px-3 py-3 text-sm text-zinc-900 shadow-sm outline-none ring-primary/30 focus:ring-4"
+            className="mt-2 w-full rounded-xl border border-border bg-card px-3 py-3 text-sm text-foreground shadow-sm outline-none ring-primary/30 focus:ring-4"
             value={slot}
             onChange={(e) => setSlot(e.target.value)}
           >
@@ -85,8 +85,8 @@ export function BookClient({ mentor }: Props) {
           </select>
         </div>
 
-        <div className="mt-6 rounded-xl border border-dashed border-border bg-surface-muted/60 p-4 text-sm text-zinc-700">
-          <div className="font-semibold text-zinc-900">What happens next?</div>
+        <div className="mt-6 rounded-xl border border-dashed border-border bg-surface-muted/60 p-4 text-sm text-foreground-muted">
+          <div className="font-semibold text-foreground">What happens next?</div>
           <ul className="mt-2 list-disc space-y-1 pl-5">
             <li>You’ll get a confirmation screen with playful “library” copy.</li>
             <li>In real life: Teams invite + optional pre-chat.</li>
@@ -108,7 +108,7 @@ export function BookClient({ mentor }: Props) {
           </Button>
           <Link
             href={`/mentors/${mentor.id}`}
-            className="inline-flex items-center rounded-lg px-4 py-2.5 text-sm font-semibold text-zinc-800 hover:bg-surface-muted"
+            className="inline-flex items-center rounded-lg px-4 py-2.5 text-sm font-semibold text-foreground hover:bg-surface-muted"
           >
             Cancel
           </Link>
