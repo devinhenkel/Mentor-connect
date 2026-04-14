@@ -1,0 +1,255 @@
+[
+  {
+    "id": "m-ada",
+    "name": "Ada Okonkwo",
+    "title": "Lead Client Partner, Healthcare",
+    "primaryGenreId": "g-client",
+    "genreIds": ["g-client", "g-leadership"],
+    "tags": [
+      "Trusted advisor",
+      "Account expansion",
+      "Executive presence",
+      "Healthcare"
+    ],
+    "storyTitle": "From renewal defense to multi-year growth",
+    "summary": "Helps LCPs turn tense renewals into joint roadmaps—and know when to walk away.",
+    "bio": "I spent my first years as an LCP saying yes to everything the client asked. The breakthrough was learning to name tradeoffs out loud and co-design a cadence that protects the team while still elevating the relationship. I mentor on executive presence, expansion plays, and the politics of large health systems.",
+    "expertise": [
+      "Rebuilding trust after a delivery miss",
+      "Executive steering committees",
+      "Joint success plans that actually get used",
+      "Pricing conversations without discount theater"
+    ],
+    "availabilitySummary": "Tue/Thu mornings (ET), 4 check-outs per month",
+    "mentoredCount": 38,
+    "rating": 4.9,
+    "testimonial": "“She helped me script a conversation I was dreading—it landed.”"
+  },
+  {
+    "id": "m-ben",
+    "name": "Ben Reyes",
+    "title": "Lead Client Partner, Retail & Consumer",
+    "primaryGenreId": "g-leadership",
+    "genreIds": ["g-leadership", "g-teams"],
+    "tags": [
+      "Leading leaders",
+      "Coaching",
+      "Psychological safety",
+      "Operating rhythm"
+    ],
+    "storyTitle": "Leading through ambiguity without becoming the bottleneck",
+    "summary": "Practical systems for delegation, 1:1s, and team health when the roadmap keeps changing.",
+    "bio": "My mentoring style is blunt-but-kind. We’ll look at your calendar and your leadership stack—where decisions stall, where you’re unintentionally signaling mistrust, and how to reset expectations with peers and teams.",
+    "expertise": [
+      "Team charters that stick",
+      "Resetting expectations mid-engagement",
+      "Coaching senior managers into ownership",
+      "Running effective partner forums"
+    ],
+    "availabilitySummary": "Wed afternoons (ET), 6 check-outs per month",
+    "mentoredCount": 52,
+    "rating": 4.8,
+    "testimonial": "“Concrete frameworks I used the same week.”"
+  },
+  {
+    "id": "m-carmen",
+    "name": "Carmen Duarte",
+    "title": "Lead Client Partner, Financial Services",
+    "primaryGenreId": "g-teams",
+    "genreIds": ["g-teams", "g-delivery"],
+    "tags": [
+      "Capacity planning",
+      "Program recovery",
+      "Hybrid teaming",
+      "Risk management"
+    ],
+    "storyTitle": "Scaling delivery without losing the plot",
+    "summary": "Designs teaming and governance models for complex programs—especially when risk spikes.",
+    "bio": "I love the messy middle: multiple workstreams, regulators in the room, and a team that’s tired. I mentor on how to simplify the operating model, make tradeoffs visible, and keep quality from becoming a slogan.",
+    "expertise": [
+      "Mobilization plans under pressure",
+      "Dependency mapping with clients",
+      "Executive readouts that drive decisions",
+      "Recovery plans that protect people"
+    ],
+    "availabilitySummary": "Mon/Fri lunch slots (ET), 3 check-outs per month",
+    "mentoredCount": 44,
+    "rating": 4.7
+  },
+  {
+    "id": "m-darius",
+    "name": "Darius Cole",
+    "title": "Lead Client Partner, Digital & AI",
+    "primaryGenreId": "g-practice",
+    "genreIds": ["g-practice", "g-client"],
+    "tags": [
+      "Industry plays",
+      "Pipeline",
+      "Offerings",
+      "Account expansion"
+    ],
+    "storyTitle": "Turning curiosity into a repeatable practice story",
+    "summary": "Helps LCPs sharpen an industry POV, package offerings, and run disciplined pursuit reviews.",
+    "bio": "If your pipeline is a spreadsheet of hope, we should talk. I mentor on how to build a simple pursuit operating rhythm, coach SMEs without creating chaos, and translate buzzwords into client outcomes.",
+    "expertise": [
+      "Win themes and proof points",
+      "Pursuit reviews that don’t waste time",
+      "Packaging AI offerings responsibly",
+      "Expanding from pilot to platform"
+    ],
+    "availabilitySummary": "Thu evenings (ET), 5 check-outs per month",
+    "mentoredCount": 29,
+    "rating": 4.8
+  },
+  {
+    "id": "m-elena",
+    "name": "Elena Park",
+    "title": "Lead Client Partner, Public Sector",
+    "primaryGenreId": "g-firm",
+    "genreIds": ["g-firm", "g-delivery"],
+    "tags": [
+      "Internal networks",
+      "Resourcing",
+      "Risk & independence",
+      "Program recovery"
+    ],
+    "storyTitle": "Getting to green inside the firm (and with the client)",
+    "summary": "Navigating independence, staffing, and escalation paths when stakes are high.",
+    "bio": "Public sector taught me patience—and paperwork. I mentor on how to build internal coalitions, sequence approvals, and keep client momentum while the machine catches up.",
+    "expertise": [
+      "Escalation planning",
+      "Partnering with Risk & Legal early",
+      "Staffing models for peak periods",
+      "Keeping delivery credible during transitions"
+    ],
+    "availabilitySummary": "Tue mornings (ET), 4 check-outs per month",
+    "mentoredCount": 33,
+    "rating": 4.6
+  },
+  {
+    "id": "m-farid",
+    "name": "Farid Nassar",
+    "title": "Lead Client Partner, Energy",
+    "primaryGenreId": "g-client",
+    "genreIds": ["g-client", "g-practice"],
+    "tags": [
+      "Difficult conversations",
+      "Pricing strategy",
+      "Executive presence",
+      "Pipeline"
+    ],
+    "storyTitle": "Holding the line on value (without sounding arrogant)",
+    "summary": "Coaches LCPs through pricing tension, scope creep, and C-suite dynamics in cyclical industries.",
+    "bio": "Energy clients feel macro shocks fast. I mentor on how to lead with empathy while protecting margin—scripts, scenarios, and the prep work that makes hard calls feel fair.",
+    "expertise": [
+      "Scope negotiation patterns",
+      "Executive read-ahead packs",
+      "Renewal choreography",
+      "When to bring partners vs. when to absorb"
+    ],
+    "availabilitySummary": "Wed mornings (CT), 5 check-outs per month",
+    "mentoredCount": 41,
+    "rating": 4.9,
+    "testimonial": "“Helped me stop apologizing for our price—and explain it.”"
+  },
+  {
+    "id": "m-grace",
+    "name": "Grace Okafor",
+    "title": "Lead Client Partner, Technology",
+    "primaryGenreId": "g-leadership",
+    "genreIds": ["g-leadership", "g-firm"],
+    "tags": [
+      "Stakeholder alignment",
+      "Career sponsorship",
+      "Decision velocity",
+      "Internal networks"
+    ],
+    "storyTitle": "Building followership across silos",
+    "summary": "Helps LCPs map power, align stakeholders, and sponsor others without overcommitting.",
+    "bio": "Tech clients move quickly; the firm sometimes doesn’t. I mentor on stakeholder maps, crisp decision rights, and how to sponsor people in a way that compounds your time instead of consuming it.",
+    "expertise": [
+      "Stakeholder alignment workshops",
+      "Sponsorship that creates opportunities",
+      "Managing partner expectations",
+      "Career storytelling for promotion cases"
+    ],
+    "availabilitySummary": "Fri mornings (PT), 4 check-outs per month",
+    "mentoredCount": 36,
+    "rating": 4.8
+  },
+  {
+    "id": "m-hao",
+    "name": "Hao Lin",
+    "title": "Lead Client Partner, Manufacturing",
+    "primaryGenreId": "g-delivery",
+    "genreIds": ["g-delivery", "g-teams"],
+    "tags": [
+      "Quality",
+      "Operating rhythm",
+      "Program recovery",
+      "Team charters"
+    ],
+    "storyTitle": "Quality at pace—without heroics",
+    "summary": "Systems for delivery governance, reviews, and recovery when timelines slip.",
+    "bio": "Manufacturing clients respect discipline. I mentor on operating rhythms: how to run reviews that catch drift early, how to reset timelines without blame, and how to protect teams from hero culture.",
+    "expertise": [
+      "Milestone governance",
+      "Quality indicators clients actually care about",
+      "Recovery communications",
+      "Cross-border teaming basics"
+    ],
+    "availabilitySummary": "Mon/Thu evenings (CT), 3 check-outs per month",
+    "mentoredCount": 27,
+    "rating": 4.7
+  },
+  {
+    "id": "m-isabel",
+    "name": "Isabel Martens",
+    "title": "Lead Client Partner, Insurance",
+    "primaryGenreId": "g-practice",
+    "genreIds": ["g-practice", "g-firm"],
+    "tags": [
+      "Pricing strategy",
+      "Offerings",
+      "Internal networks",
+      "Pipeline"
+    ],
+    "storyTitle": "Making the practice engine hum",
+    "summary": "Connects pipeline discipline with internal collaboration—especially across service lines.",
+    "bio": "Insurance is relationship-heavy and process-heavy. I mentor on how to run a simple weekly practice rhythm, when to pull in specialists, and how to keep pursuits from dissolving into email threads.",
+    "expertise": [
+      "Cross-service-line pursuits",
+      "Offerings that match client maturity",
+      "Forecasting without fantasy",
+      "Internal introductions that land"
+    ],
+    "availabilitySummary": "Tue/Wed afternoons (ET), 5 check-outs per month",
+    "mentoredCount": 31,
+    "rating": 4.8
+  },
+  {
+    "id": "m-jon",
+    "name": "Jon Whitaker",
+    "title": "Lead Client Partner, Media",
+    "primaryGenreId": "g-teams",
+    "genreIds": ["g-teams", "g-leadership"],
+    "tags": [
+      "Hybrid teaming",
+      "Coaching",
+      "Psychological safety",
+      "Operating rhythm"
+    ],
+    "storyTitle": "Creative teams + consulting discipline",
+    "summary": "Helps LCPs coach creative talent, set boundaries, and keep delivery predictable.",
+    "bio": "Media clients want magic on a deadline. I mentor on how to create safety for creative risk while still holding a bar for delivery—especially in hybrid environments.",
+    "expertise": [
+      "Creative critiques that don’t demotivate",
+      "Hybrid rituals that actually work",
+      "Managing unpredictable client feedback",
+      "Balancing autonomy with accountability"
+    ],
+    "availabilitySummary": "Mon mornings (PT), 4 check-outs per month",
+    "mentoredCount": 22,
+    "rating": 4.6
+  }
+]

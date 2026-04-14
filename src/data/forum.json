@@ -1,0 +1,26 @@
+[
+  {
+    "id": "t-1",
+    "genreId": "g-client",
+    "title": "Client wants weekly status—but leadership wants monthly steering",
+    "excerpt": "How are you reconciling cadence without looking unresponsive?",
+    "replyCount": 14,
+    "lastActivity": "2h ago"
+  },
+  {
+    "id": "t-2",
+    "genreId": "g-teams",
+    "title": "Teaming model for a 3-workstream program",
+    "excerpt": "Looking for examples of RACI variants that didn’t become wallpaper.",
+    "replyCount": 9,
+    "lastActivity": "Yesterday"
+  },
+  {
+    "id": "t-3",
+    "genreId": "g-practice",
+    "title": "Pipeline hygiene for Q3—what’s working for you?",
+    "excerpt": "Trying to keep pursuit reviews short but still useful.",
+    "replyCount": 21,
+    "lastActivity": "3d ago"
+  }
+]
