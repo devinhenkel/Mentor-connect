@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Genre, Mentor } from "@/lib/types";
+import { MentorAvatar } from "@/components/MentorAvatar";
 
 type Props = {
   mentor: Mentor;
@@ -23,16 +24,11 @@ export function MentorCard({ mentor, genres, genreContextId }: Props) {
           </h3>
           <p className="mt-1 text-sm text-foreground-muted">{mentor.title}</p>
         </div>
-        <div
-          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-surface-muted text-sm font-semibold text-foreground-muted"
-          aria-hidden
-        >
-          {mentor.name
-            .split(" ")
-            .map((p) => p[0])
-            .join("")
-            .slice(0, 2)}
-        </div>
+        <MentorAvatar
+          mentorId={mentor.id}
+          size="sm"
+          title={`Illustrated avatar for ${mentor.name}`}
+        />
       </div>
       <p className="mt-3 text-sm font-medium text-foreground">
         {mentor.storyTitle}
